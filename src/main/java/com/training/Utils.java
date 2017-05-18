@@ -1,15 +1,15 @@
 package com.training;
 
 /**
- * Created by Opleiding on 18/05/2017.
+ * Created by hassan on 18/05/2017.
  */
 public class Utils {
-
     public static int add(int... numbers) {
-        int sum = 0;
+        int result = 0;
         for (int i = 0; i < numbers.length; i++) {
-            sum += numbers[i];
+            result += numbers[0];
         }
-        return sum;
+        return result;
     }
 }
+
