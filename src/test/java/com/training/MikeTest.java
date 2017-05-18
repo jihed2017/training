@@ -49,6 +49,6 @@ public class MikeTest {
         if(Utils.add(numberOne,numberTwo)== 7) {
             actualResult = true;
         }
-        assertEquals("Addition with 1 positif and 1 negatif not right",expResult,actualResult);
+        assertEquals("Addition with 1 zero and 1 positif not right",expResult,actualResult);
     }
 }
