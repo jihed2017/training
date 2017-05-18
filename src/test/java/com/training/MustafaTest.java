@@ -16,8 +16,7 @@ public class MustafaTest {
 
     @Test
     public void testAddNotCorrect(){
-
         int actual = Utils.add(5,3,10,4,1);
-        assertEquals(actual,25);
+        assertNotEquals(actual,25);
     }
 }

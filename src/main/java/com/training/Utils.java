@@ -1,5 +1,7 @@
 package com.training;
 
+import java.util.List;
+
 /**
  * Created by hassan on 18/05/2017.
  */
@@ -7,7 +9,21 @@ public class Utils {
     public static int add(int... numbers) {
         int result = 0;
         for (int i = 0; i < numbers.length; i++) {
-            result += numbers[0];
+            Integer transform = new Integer(numbers[i]);
+            if(transform==null){
+                transform=0;
+            }
+            result += transform;
+        }
+        return result;
+    }
+
+    public static int add(List<Integer> numbers) {
+        int result = 0;
+        for (int i = 0; i < numbers.size(); i++) {
+            if(numbers.get(i)!=null){
+                result += numbers.get(i);
+            }
         }
         return result;
     }
